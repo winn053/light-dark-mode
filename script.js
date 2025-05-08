@@ -17,10 +17,10 @@ function imageMode(color) {
 }
 
 function toggleDarkLightMode(theme) {
-  nav.style.backgroundColor = theme === 'dark' ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
-  textBox.style.backgroundColor = theme === 'dark' ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
-  toggleIcon.children[0].textContent = theme === 'dark' ? 'Dark Mode' : 'Light Mode';
-  toggleIcon.children[1].classList.replace(theme === 'dark' ? 'fa-sun' : 'fa-moon', theme === 'dark' ? 'fa-moon' : 'fa-sun');
+  nav.style.backgroundColor = theme === DARK_THEME ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
+  textBox.style.backgroundColor = theme === DARK_THEME ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
+  toggleIcon.children[0].textContent = theme === DARK_THEME ? 'Dark Mode' : 'Light Mode';
+  toggleIcon.children[1].classList.replace(theme === DARK_THEME ? 'fa-sun' : 'fa-moon', theme === DARK_THEME ? 'fa-moon' : 'fa-sun');
   imageMode(theme);
 }
 
